@@ -1,3 +1,13 @@
 /target/
 
 .settings/
+
+.classpath
+
+.factorypath
+
+.project
+
+.vscode/
+
+log/
