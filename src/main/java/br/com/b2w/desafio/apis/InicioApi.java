@@ -12,11 +12,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.annotations.Api;
+
+@Api(description = "API disponibiliza os dados dos planetas")
 @RestController
 @RequestMapping("/api/inicio")
-public class InicioController {
+public class InicioApi {
 
-	private static Logger logger = LoggerFactory.getLogger(InicioController.class);
+	private static Logger logger = LoggerFactory.getLogger(InicioApi.class);
 	
     private static LocalDateTime dateIni = LocalDateTime.of(2020, 5, 25, 14, 0, 0);
 
