@@ -160,7 +160,7 @@ public class PlanetaApiTest {
         when(serviceMock.buscarPorId("5eccfe0aecb1b847c0493481")).thenReturn(Optional.of(p3));
 		doNothing().when(serviceMock).deletar(p3);
 		
-		mockMvc.perform(delete("/api/planetas/{id}/deletar", "5bf4161bd07bc8237ec34562"))
+		mockMvc.perform(delete("/api/planetas/{id}/deletar", "5eccfe0aecb1b847c0493481"))
                 .andExpect(status().isNoContent());
 
 	}	
