@@ -1,0 +1,21 @@
+version: '3.1'
+services:
+
+  b2w-desafio:
+    build: .
+    depends_on:
+      - mongo
+    ports:
+      - "8089:8089"
+
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
